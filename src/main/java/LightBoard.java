@@ -35,7 +35,7 @@ public class LightBoard
     } else {
       return lightCount % 3 == 0;
     }
-  } 
+   } 
   }
   public boolean[][] getLights()
   {
