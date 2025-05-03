@@ -30,8 +30,12 @@ public class LightBoard
         lightCount++;
       }
     }
-
- 
+    if (lights[row][col]) {
+      return lightCount % 2 != 0;
+    } else {
+      return lightCount % 3 == 0;
+    }
+  } 
   }
   public boolean[][] getLights()
   {
